@@ -1,0 +1,34 @@
+public class Human {
+    /*
+    This is human class, A human can be a women or man
+    Both women and man have age, color of their skin and other traits
+    */
+
+    String gender = "Women";
+    String skinColor = "Black";
+
+    public  void method1(String variable1, String variable2){
+        this.gender = variable1;
+        this.skinColor = variable2;
+        
+        System.out.println("The name of the class is: "+ "Human");
+
+        System.out.println("My first variable’s name is: "+ gender);
+        System.out.println("Second variable’s name is "+ skinColor);
+    
+    }
+    public int numberOfCharacters(String str){
+        int strLength = str.length();
+    return strLength;
+    }
+
+    public static void main(String[] args) {
+        Human object1 = new Human();
+
+        object1.method1("Man", "Black");
+        System.out.println(object1.numberOfCharacters("Java"));
+
+        
+    }
+}
+
